@@ -1,0 +1,10 @@
+{
+  "AuthApi": {
+    "LoginService": {
+      "baseurl":"https://127.0.0.1:7071/auth/login"
+    },
+    "SignupService": {
+      "baseurl":"https://127.0.0.1:7071/auth/register"
+    }
+ }
+}
