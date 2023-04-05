@@ -1,0 +1,2 @@
+const double MW_COEEFICIENT_DOG=0.75;
+const double MW_COEEFICIENT_CAT=0.67;

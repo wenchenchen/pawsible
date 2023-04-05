@@ -1,5 +1,6 @@
 
 import 'package:pawsible/domain/contracts/user_repository.dart';
+import 'package:pawsible/presentation/providers/recipe_designer_provider.dart';
 import 'package:pawsible/utils/locator.dart';
 import 'package:flutter/material.dart';
 
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider.value(value: AuthProvider(locator<ApiRepository>(),locator<UserRepository>())),
+        ChangeNotifierProvider.value(value: RecipeDesignerProvider()),
       ],
       child: Consumer<AuthProvider>(builder: (ctx, auth, _) => MaterialApp.router(
         debugShowCheckedModeBanner: false,
